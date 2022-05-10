@@ -25,8 +25,8 @@ const Expertise = ( props ) => {
                                                             after:content-[''] after:absolute after:block after:top-[0.85rem] 
                                                             after:left-0 after:z-2 after:h-2 after:w-2 after:rounded-full after:bg-gray-400 dark:after:bg-white tracking-[0.03rem]">{ tech.name }</h3>
                                                             <div className="pl-7">
-                                                                <h3 className="text-[0.9rem] sm:text-sm font-medium text-gray-400 tracking-[0.03rem]">Level of Expertise: { tech.level }</h3>
-                                                                <h3 className="text-[0.9rem] sm:text-sm font-medium text-gray-400 tracking-[0.03rem]">Year of Experience: { tech.years }</h3>
+                                                                <h3 className="text-[0.8rem] sm:text-sm font-medium text-gray-400 tracking-[0.03rem]">Level of Expertise: { tech.level }</h3>
+                                                                <h3 className="text-[0.8rem] sm:text-sm font-medium text-gray-400 tracking-[0.03rem]">Year of Experience: { tech.years }</h3>
                                                             </div>
                                                         </div>
                                                     );
