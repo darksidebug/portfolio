@@ -12,15 +12,15 @@ const ProfileNavigation = ( props ) => {
                 </div>
             </div>
             <div className="flex justify-center">
-                <div className="relative -top-20 z-30 p-1.5 border-4 border-blue4 rounded-full dark:bg-gray-700 dark:shadow-xl">
-                    <div className="overflow-hidden h-36 w-36 rounded-full">
+                <div className={`relative -top-20 z-30 p-1.5 border-4 border-blue4 rounded-full ${ props.isMobile ? 'bg-white' : ''} dark:bg-gray-700 dark:shadow-xl`}>
+                    <div className={`overflow-hidden h-36 w-36 ${ props.isMobile ? 'border border-gray-300' : ''} rounded-full`}>
                         <img className="w-full" src={ profile } alt="Profile-Image" />
                     </div>
                 </div>
                 <div className="absolute z-20">
                     <NavLink
                         to="/projects"
-                        className="absolute -left-[9.3rem] top-6 z-30 px-[0.3rem] py-[0.73rem] h-12 w-12 border border-gray-700 rounded-full dark:shadow-lg bg-gray-600 text-white">
+                        className="absolute -left-[9.3rem] top-6 z-30 px-[0.3rem] py-[0.73rem] h-12 w-12 border border-gray-600 dark:border-gray-700 rounded-full dark:shadow-lg bg-gray-600 text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" className="inline-block h-5 w-5 ml-2 mb-1 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                             strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/>
@@ -28,7 +28,7 @@ const ProfileNavigation = ( props ) => {
                     </NavLink>
                     <NavLink
                         to="/devtools"
-                        className="absolute -left-[6.5rem] top-[5.5rem] z-30 px-1.5 py-3 h-12 w-12 border border-gray-700 rounded-full dark:shadow-lg bg-gray-600 text-white">
+                        className="absolute -left-[6.5rem] top-[5.5rem] z-30 px-1.5 py-3 h-12 w-12 border border-gray-600 dark:border-gray-700 rounded-full dark:shadow-lg bg-gray-600 text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" className="inline-block h-5 w-5 ml-2 mb-1 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                         strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline>
@@ -36,7 +36,7 @@ const ProfileNavigation = ( props ) => {
                     </NavLink>
                     <NavLink
                         to="/about"
-                        className="absolute -left-6 top-[6.7rem] z-30 px-[0.3rem] py-3 h-12 w-12 border border-gray-700 rounded-full dark:shadow-lg bg-gray-600 text-white">
+                        className="absolute -left-6 top-[6.7rem] z-30 px-[0.3rem] py-3 h-12 w-12 border border-gray-600 dark:border-gray-700 rounded-full dark:shadow-lg bg-gray-600 text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" className="inline-block h-5 w-5 ml-2 mb-1 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                         strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <circle cx="12" cy="12" r="10"></circle>
@@ -46,7 +46,7 @@ const ProfileNavigation = ( props ) => {
                     </NavLink>
                     <NavLink
                         to="/contact"
-                        className="absolute -right-[6.5rem] top-[5.5rem] z-30 px-1.5 py-3 h-12 w-12 border border-gray-700 rounded-full dark:shadow-lg bg-gray-600 text-white">
+                        className="absolute -right-[6.5rem] top-[5.5rem] z-30 px-1.5 py-3 h-12 w-12 border border-gray-600 dark:border-gray-700 rounded-full dark:shadow-lg bg-gray-600 text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" className="inline-block h-5 w-5 ml-2 mb-1 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                         strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 
@@ -56,7 +56,7 @@ const ProfileNavigation = ( props ) => {
                     </NavLink>
                     <NavLink
                         to="/vitae"
-                        className="absolute -right-[9.3rem] top-6 z-30 px-1.5 py-2.5 h-12 w-12 border border-gray-700 rounded-full dark:shadow-lg bg-gray-600 text-white">
+                        className="absolute -right-[9.3rem] top-6 z-30 px-1.5 py-2.5 h-12 w-12 border border-gray-600 dark:border-gray-700 rounded-full dark:shadow-lg bg-gray-600 text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" className="inline-block h-5 w-5 ml-2 mb-1 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
                         strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                             <path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/><path d="M14 3v5h5M16 13H8M16 17H8M10 9H8"/>
@@ -64,8 +64,8 @@ const ProfileNavigation = ( props ) => {
                     </NavLink>
                 </div>
             </div>
-            <div className="fixed left-0 -bottom-0.5 z-30 py-4 w-full rounded-tl-2xl rounded-tr-2xl bg-gray-700 dark:bg-gray-800">
-                <div className="flex justify-around">
+            <div className="fixed left-0 -bottom-0.5 z-30 py-4 w-full border-t dark:border-gray-700 rounded-tl-2xl rounded-tr-2xl bg-gray-700 dark:bg-gray-600 shadow-xl">
+                <div className="flex justify-around items-center">
                     <NavLink
                         to="/"
                         className="text-white">
@@ -87,27 +87,27 @@ const ProfileNavigation = ( props ) => {
                         </svg>
                     </NavLink>
                     <label htmlFor="toggle" className="flex items-center cursor-pointer">
-								<div className="relative">
-									<input type="checkbox" id="toggle" className="sr-only" />
-									<div className="block bg-gray-300 dark:bg-gray-500 w-14 h-8 rounded-full" onClick={ props.handleToggleSwitch }></div>
-									<div className="hidden sm:block absolute top-1 -left-24 text-gray-600 dark:text-white font-medium">{ props.isDarkModeToggled ? "Dark Mode" : "Light Mode" }</div>
-									<div className={`absolute left-1 top-1 ${ props.isDarkModeToggled ? "translate-x-full" : "" } transition w-6 h-6 p-1.5 rounded-full bg-white`} onClick={ props.handleToggleSwitch }>
-										{
-											props.isDarkModeToggled ? 
-												<svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-gray-700" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" 
-												strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-													<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-												</svg>
-											:
-												<svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" 
-												strokeLinecap="round" strokeLinejoin="round">
-													<circle cx="12" cy="12" r="5"/>
-													<path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/>
-												</svg>
-										}
-									</div>
-								</div>
-							</label>
+                        <div className="relative">
+                            <input type="checkbox" id="toggle" className="sr-only" />
+                            <div className="block bg-gray-300 dark:bg-gray-500 w-14 h-8 rounded-full" onClick={ props.handleToggleSwitch }></div>
+                            <div className="hidden sm:block absolute top-1 -left-24 text-gray-600 dark:text-white font-medium">{ props.isDarkModeToggled ? "Dark Mode" : "Light Mode" }</div>
+                            <div className={`absolute left-1 top-1 ${ props.isDarkModeToggled ? "translate-x-full" : "" } transition w-6 h-6 p-1.5 rounded-full bg-white`} onClick={ props.handleToggleSwitch }>
+                                {
+                                    props.isDarkModeToggled ? 
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-gray-700" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" 
+                                        strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                        </svg>
+                                    :
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-gray-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" 
+                                        strokeLinecap="round" strokeLinejoin="round">
+                                            <circle cx="12" cy="12" r="5"/>
+                                            <path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/>
+                                        </svg>
+                                }
+                            </div>
+                        </div>
+                    </label>
                     <NavLink
                         to="/expertise"
                         className="text-white">

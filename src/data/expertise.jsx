@@ -27,7 +27,7 @@ const Expertise = [
             {
                 "name"  : "Nest JS",
                 "level" : "Intermediate",
-                "years" : "-1 years"
+                "years" : "-1 year"
             }
         ]
     },
@@ -49,7 +49,7 @@ const Expertise = [
             {
                 "name"  : "MongoDB | Express | React | Node JS",
                 "level" : "Intermediate",
-                "years" : "-1 years"
+                "years" : "-1 year"
             }
         ]
     },
@@ -65,7 +65,7 @@ const Expertise = [
             {
                 "name"  : "Figma",
                 "level" : "Intermediate",
-                "years" : "1+ years"
+                "years" : "1+ year"
             }
         ]
     },
@@ -76,7 +76,7 @@ const Expertise = [
             {
                 "name"  : "C# Asp.net Core",
                 "level" : "Intermediate",
-                "years" : "1+ years"
+                "years" : "1+ year"
             },
             {
                 "name"  : "Tailwind CSS",

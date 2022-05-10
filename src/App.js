@@ -8,6 +8,7 @@ import CurriculumVitae from "./routes/vitae";
 import Education from "./routes/education";
 import Expertise from "./routes/expertise";
 import Experience from "./routes/experience";
+import Contact from "./routes/contact";
 
 const App = () => {
 	const [isDarkModeToggled, setDarkMode] = useState(false);
@@ -64,22 +65,22 @@ const App = () => {
 	return (
 		<div className="overflow-hidden">
 			<BrowserRouter>
-			{
-				!isMobileDevice ? 
-					<Navigation 
-						handleToggleSwitch  = { handleToggleSwitch } 
-						handleNavMenuToggle = { handleNavMenuToggle } 
-						isDarkModeToggled	= { isDarkModeToggled } 
-						isNavMenuToggled	= { isNavMenuToggled } 
-						isMobileDevice		= { isMobileDevice }
-					/>
-				:
-					<ProfileNavigation 
-						handleToggleSwitch = { handleToggleSwitch } 
-						isDarkModeToggled  = { isDarkModeToggled } 
-						isMobileDevice	   = { isMobileDevice }
-					/>
-			}
+				{
+					!isMobileDevice ? 
+						<Navigation 
+							handleToggleSwitch  = { handleToggleSwitch } 
+							handleNavMenuToggle = { handleNavMenuToggle } 
+							isDarkModeToggled	= { isDarkModeToggled } 
+							isNavMenuToggled	= { isNavMenuToggled } 
+							isMobileDevice		= { isMobileDevice }
+						/>
+					:
+						<ProfileNavigation 
+							handleToggleSwitch = { handleToggleSwitch } 
+							isDarkModeToggled  = { isDarkModeToggled } 
+							isMobile	   = { isMobileDevice }
+						/>
+				}
 				<Routes>
 					<Route index element={ <Profile isMobile={ isMobileDevice } /> } />
 					<Route path="projects" element={ 
@@ -87,9 +88,10 @@ const App = () => {
 							isDarkModeToggled = { isDarkModeToggled } 
 							isMobile={ isMobileDevice } /> 
 					} 	/>
-					<Route path="education" element  = { <Education isMobile   = { isMobileDevice } /> } />
-					<Route path="expertise" element  = { <Expertise isMobile   = { isMobileDevice } /> } />
-					<Route path="experience" element = { <Experience isMobile = { isMobileDevice } /> } />
+					<Route path="education" element  = { <Education isMobile       = { isMobileDevice } /> } />
+					<Route path="expertise" element  = { <Expertise isMobile   	   = { isMobileDevice } /> } />
+					<Route path="experience" element = { <Experience isMobile 	   = { isMobileDevice } /> } />
+					<Route path="contact" element    = { <Contact isMobile         = { isMobileDevice } /> } />
 					<Route path="vitae" element      = { <CurriculumVitae isMobile = { isMobileDevice } /> } />
 				</Routes>
 			</BrowserRouter>

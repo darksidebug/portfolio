@@ -37,9 +37,9 @@ const Projects = ( props ) => {
                                         strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6"/></svg>
                                     </Button>
                                     <div className={`absolute top-[3.3rem] right-0 z-30 ${ isDropdownToggled ? 'block' : 'hidden'} px-4 py-4 border border-gray-300 dark:border-gray-500 rounded-lg shadow-xl bg-white dark:bg-gray-600 after:content-[''] after:absolute after:-top-[0.52rem] after:right-3 after:z-40 after:h-4 after:w-4 after:border-t after:border-r after:border-gray-300 dark:after:border-gray-500 after:bg-white dark:after:bg-gray-600 after:-rotate-45`}>
-                                        <div className="my-2 mx-3 font-medium dark:text-gray-100 tracking-[0.03rem]">Gallery</div>
-                                        <div className="my-2 mx-3 font-medium dark:text-gray-100 tracking-[0.03rem]">Carousel</div>
-                                        <div className="my-2 mx-3 font-medium dark:text-gray-100 tracking-[0.03rem]">VScroll</div>
+                                        <div className="my-2 mx-3 font-medium text-gray-600 dark:text-gray-100 tracking-[0.03rem]">Gallery</div>
+                                        <div className="my-2 mx-3 font-medium text-gray-600 dark:text-gray-100 tracking-[0.03rem]">Carousel</div>
+                                        <div className="my-2 mx-3 font-medium text-gray-600 dark:text-gray-100 tracking-[0.03rem]">VScroll</div>
                                     </div>
                                 </div>
                             </div>

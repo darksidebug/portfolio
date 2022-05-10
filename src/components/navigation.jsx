@@ -24,7 +24,7 @@ const Navigation = ( props ) => {
 								About Me
 							</NavLink>
 							<NavLink to="/contact" className="text-gray-700 hover:text-blue4 dark:hover:text-blue4 dark:md:text-white font-semibold dark:font-medium">
-								Contact
+								Contact Me
 							</NavLink>
 							<NavLink to="/vitae" className="text-gray-700 hover:text-blue4 dark:hover:text-blue4 dark:md:text-white font-semibold dark:font-medium">
 								Curriculum Vitae
@@ -113,7 +113,7 @@ const Navigation = ( props ) => {
 							<NavLinks 
 								to="/contact" 
 								handleNavMenuToggle={ props.handleNavMenuToggle }
-								text="Contact">
+								text="Contact Me">
 								<svg xmlns="http://www.w3.org/2000/svg" className="inline-block h-5 w-5 ml-2 mb-1 mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
 								strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
 									<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 
