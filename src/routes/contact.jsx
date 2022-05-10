@@ -45,13 +45,13 @@ const Contact = ( props ) => {
                                 </a>
                             </div>
                         </div>
-                        <div className="w-12/12 md:4/12 lg:6/12 py-3 md:py-6 px-6 md:px-12 border border-gray-300 dark:border-gray-500 rounded-lg bg-gray-600 ">
+                        <div className="w-12/12 md:4/12 lg:6/12 py-3 md:py-6 px-6 md:px-12 border border-gray-300 dark:border-gray-500 rounded-lg dark:bg-gray-600 ">
                             <h1 className="mb-8 text-gray-600 dark:md:text-blue4 md:text-gray-500 text-2xl md:text-3xl font-bold">Leave me a<br /> message.</h1>
-                            <input type="text" className="block my-2 px-4 py-2 w-full md:w-72 lg:w-96 border border-gray-200 dark:border-gray-500 rounded-md text-gray-600 bg-white dark:bg-gray-600 
+                            <input type="text" className="block my-2 px-4 py-2 w-full md:w-72 lg:w-96 border border-gray-200 dark:border-gray-500 rounded-md text-gray-600 dark:text-gray-300 bg-white dark:bg-gray-600 
                                 focus:outline focus:outline-blue4 focus:outline-2" placeholder="Enter full name ..." />
-                            <input type="email" className="block my-2 px-4 py-2 w-full md:w-72 lg:w-96 border border-gray-200 dark:border-gray-500 rounded-md text-gray-600 bg-white dark:bg-gray-600 
+                            <input type="email" className="block my-2 px-4 py-2 w-full md:w-72 lg:w-96 border border-gray-200 dark:border-gray-500 rounded-md text-gray-600 dark:text-gray-300 bg-white dark:bg-gray-600 
                                 focus:outline focus:outline-blue4 focus:outline-2" placeholder="Enter email add ..." />
-                            <textarea className="block p-4 my-2 w-full md:w-72 lg:w-96 border border-gray-200 dark:border-gray-500 rounded-md bg-white dark:bg-gray-600  text-gray-600 focus:outline focus:outline-blue4 focus:outline-2" 
+                            <textarea className="block p-4 my-2 w-full md:w-72 lg:w-96 border border-gray-200 dark:border-gray-500 rounded-md bg-white dark:bg-gray-600 dark:text-gray-300  text-gray-600 focus:outline focus:outline-blue4 focus:outline-2" 
                                 name="" id="" cols="30" rows="7" placeholder="Write your message here ...">
 
                             </textarea>
