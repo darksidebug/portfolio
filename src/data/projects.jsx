@@ -1,8 +1,11 @@
-import obleisk from "../img/Obelisk.png"
-import darkPortfolio from "../img/portfolio.png"
-import lightPortfolio from "../img/portfolio1.png"
+import obleisk from "../img/Obelisk.jpg"
+import Portfolio from "../img/Portfolio.jpg"
 import DARSupply from "../img/DAR-Supply.png"
 import PPCRV from "../img/PPCRV.png"
+import MovieStream from "../img/MovieStream.jpg"
+import WaterSystem from "../img/MWS.png"
+import PayrollManagement from "../img/Payroll.png"
+import GISWebBasedAssetMgt from "../img/GISWebBasedAssetMgt.png"
 
 const projectLists = [
     {
@@ -15,8 +18,7 @@ const projectLists = [
                 "percent"  : null
             }
         ],
-        "dark" : obleisk,
-        "light": obleisk
+        "img" : obleisk
     },
     {
         "id"     : 2,
@@ -28,11 +30,22 @@ const projectLists = [
                 "percent"  : null
             }
         ],
-        "dark" : darkPortfolio,
-        "light": lightPortfolio
+        "img" : Portfolio
     },
     {
         "id"     : 3,
+        "name"   : "Movie stream",
+        "details": null,
+        "tech"   : [
+            {
+                "techStack": null,
+                "percent"  : null
+            }
+        ],
+        "img" : MovieStream
+    },
+    {
+        "id"     : 4,
         "name"   : "DAR Supply Management System",
         "details": null,
         "tech"   : [
@@ -41,11 +54,10 @@ const projectLists = [
                 "percent"  : null
             }
         ],
-        "dark" : DARSupply,
-        "light": DARSupply
+        "img" : DARSupply
     },
     {
-        "id"     : 3,
+        "id"     : 5,
         "name"   : "PPCRV Quick Count",
         "details": null,
         "tech"   : [
@@ -54,8 +66,43 @@ const projectLists = [
                 "percent"  : null
             }
         ],
-        "dark" : PPCRV,
-        "light": PPCRV
+        "img" : PPCRV
+    },
+    {
+        "id"     : 6,
+        "name"   : "Macrohon Water System",
+        "details": null,
+        "tech"   : [
+            {
+                "techStack": null,
+                "percent"  : null
+            }
+        ],
+        "img" : WaterSystem
+    },
+    {
+        "id"     : 7,
+        "name"   : "Payroll Management System",
+        "details": null,
+        "tech"   : [
+            {
+                "techStack": null,
+                "percent"  : null
+            }
+        ],
+        "img" : PayrollManagement
+    },
+    {
+        "id"     : 8,
+        "name"   : "GIS Web Based Asset Management System",
+        "details": null,
+        "tech"   : [
+            {
+                "techStack": null,
+                "percent"  : null
+            }
+        ],
+        "img" : GISWebBasedAssetMgt
     },
 ]
 

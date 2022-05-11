@@ -18,7 +18,7 @@ const experience = [
         "company"     : "Freelance",
         "address"     : "Southern Leyte",
         "year"        : "January 2016 - May 2022",
-        "description" : "Developed software applications specifically tailored based on the clients' needs. Ensure products' quality, deliver the product on time, and make sure the product is a user friendly. Provide technical support if neccessary."
+        "description" : "Developed software applications specifically tailored based on the clients' needs. Ensure products' quality, deliver the product on time, and make sure that the product is user friendly. Provide technical support if neccessary."
     },
     {
         "position"    : "Security Guard",

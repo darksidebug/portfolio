@@ -83,8 +83,7 @@ const Profile = ( props ) => {
 						</div>
 					</div>
 					<div className="flex justify-center items-center mt-12">
-						<NavLink to="#" download="" className="flex justify-start items-center py-3 px-12 space-x-2 rounded-md text-white dark:text-gray-800 
-							dark:hover:text-white font-semibold bg-blue4">
+						<NavLink to="#" download="" className="flex justify-start items-center py-3 px-12 space-x-2 rounded-md text-white font-semibold bg-blue4">
 							<span>Download CV</span>
 							<svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" 
 								strokeLinecap="round" strokeLinejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/></svg>

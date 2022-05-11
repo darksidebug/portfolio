@@ -9,6 +9,8 @@ import Education from "./routes/education";
 import Expertise from "./routes/expertise";
 import Experience from "./routes/experience";
 import Contact from "./routes/contact";
+import Tools from "./routes/devtools";
+import About from "./routes/about";
 
 const App = () => {
 	const [isDarkModeToggled, setDarkMode] = useState(false);
@@ -91,6 +93,8 @@ const App = () => {
 					<Route path="education" element  = { <Education isMobile       = { isMobileDevice } /> } />
 					<Route path="expertise" element  = { <Expertise isMobile   	   = { isMobileDevice } /> } />
 					<Route path="experience" element = { <Experience isMobile 	   = { isMobileDevice } /> } />
+					<Route path="devtools" element   = { <Tools isMobile           = { isMobileDevice } /> } />
+					<Route path="about" element      = { <About isMobile           = { isMobileDevice } /> } />
 					<Route path="contact" element    = { <Contact isMobile         = { isMobileDevice } /> } />
 					<Route path="vitae" element      = { <CurriculumVitae isMobile = { isMobileDevice } /> } />
 				</Routes>

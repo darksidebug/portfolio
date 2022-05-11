@@ -47,7 +47,7 @@ const Expertise = [
         "name": "MERN Stack",
         "tech": [
             {
-                "name"  : "Mongo|Express|React|NodeJS",
+                "name"  : "MongoDB/Express/React/NodeJS",
                 "level" : "Intermediate",
                 "years" : "-1 year"
             }
@@ -66,6 +66,11 @@ const Expertise = [
                 "name"  : "Figma",
                 "level" : "Intermediate",
                 "years" : "1+ year"
+            },
+            {
+                "name"  : "AdobeXD",
+                "level" : "Intermediate",
+                "years" : "-1 year"
             }
         ]
     },
