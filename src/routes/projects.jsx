@@ -31,7 +31,7 @@ const Projects = ( props ) => {
                             </div>
                         </div>
                         <h3 className="mt-8 text-gray-500 dark:text-white font-semibold text-xl">Remarkable Projects</h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8 mb-12 px-6 sm:px-10 md:px-0">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8 mb-12 px-4 sm:px-10 md:px-0">
                         {
                             ProjectsList.map(
                                 (project, index) => {

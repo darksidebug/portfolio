@@ -23,7 +23,7 @@ const Tools = ( props ) => {
                             </h1>
                         </div>
                         <h3 className="mt-8 text-gray-500 dark:text-white font-semibold text-xl">Most Common Tools</h3>
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-8 mb-12 px-6 sm:px-10 md:px-0">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-8 mb-12 px-4 sm:px-10 md:px-0">
                         {
                             ToolsList.map(
                                 (tools, index) => {
