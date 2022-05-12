@@ -23,7 +23,7 @@ const Projects = ( props ) => {
                             }
                             </h1>
                             <div className="sm:flex justify-start md:justify-end items-center space-x-2">
-                                <a href="https://github.com/darksidebug?tab=repositories" className="block py-2 px-2.5 w-[8.6rem] md:w-[10.1rem] border border-gray-300 hover:border-blue4 dark:border-0 rounded-md text-gray-500 dark:text-white 
+                                <a href="https://github.com/darksidebug?tab=repositories" className="block py-2 px-2.5 w-[8.8rem] md:w-[10.1rem] border border-gray-300 hover:border-blue4 dark:border-0 rounded-md text-gray-500 dark:text-white 
                                     hover:text-white dark:hover:md:text-blue4 text-sm font-medium tracking-[0.03rem] bg-white dark:bg-gray-600 hover:bg-blue4">
                                     <span className="hidden md:block">See All Repositories</span>
                                     <span className="block md:hidden">See Repositories</span>

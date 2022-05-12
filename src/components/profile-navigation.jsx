@@ -2,10 +2,14 @@
 import bgImg from "../img/bg.jpg";
 import profile from "../img/benj_profile.jpg"; 
 import { Outlet, NavLink } from "react-router-dom";
+import { motion } from "framer-motion"
 
 const ProfileNavigation = ( props ) => {
     return (  
-        <>
+        <motion.div 
+            initial = {{ opacity: 0 }}
+            animate = {{ opacity: 1 }}
+            exit    = {{ opacity: 0 }}>
             <div className="overflow-hidden flex justify-center h-32 border-b border-gray-300">
                 <div className="h-32">
                     <img src={ bgImg } alt="Background-Image" />
@@ -128,7 +132,7 @@ const ProfileNavigation = ( props ) => {
                 </div>
             </div>
             <Outlet />
-        </>
+        </motion.div>
     );
 }
  
