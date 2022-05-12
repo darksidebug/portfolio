@@ -6,6 +6,8 @@ import Photoshop from "../img/tools/photoshop.png"
 import MySQL from "../img/tools/mysql.png"
 import MSSQL from "../img/tools/mssql.png"
 import MySQLi from "../img/tools/xampp.png"
+import Laragon from "../img/tools/laragon.png"
+import SQLite from "../img/tools/sqlite.png"
 
 const tools = [
     {
@@ -46,6 +48,16 @@ const tools = [
     {
         "name": "XAMPP",
         "img": MySQLi,
+        "type": "DB-Tools"
+    },
+    {
+        "name": "Laragon",
+        "img": Laragon,
+        "type": "DB-Tools"
+    },
+    {
+        "name": "SQLite",
+        "img": SQLite,
         "type": "DB-Tools"
     },
 ];

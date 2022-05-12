@@ -1,6 +1,12 @@
+import { motion } from "framer-motion"
+
 const About = ( props ) => {
     return (  
-        <div className={`container mx-auto px-8 md:px-6 mt-10 ${ props.isMobile ? 'mb-24' : ''} sm:mt-16`}>
+        <motion.div 
+            className={`container mx-auto px-8 md:px-6 mt-10 ${ props.isMobile ? 'mb-24' : ''} sm:mt-16`}
+            initial = {{ opacity: 0 }}
+			animate = {{ opacity: 1 }}
+			exit    = {{ opacity: 0 }}>
             <div className="flex justify-center md:px-20">
                 <div className="w-12/12 md:w-7/12">
                     <h1 className="text-3xl md:text-5xl font-semibold text-blue4">About Me</h1>
@@ -37,7 +43,7 @@ const About = ( props ) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
  

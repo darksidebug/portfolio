@@ -1,9 +1,14 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import ToolsList from "../data/tools"
+import { motion } from "framer-motion"
 
 const Tools = ( props ) => {
     return (  
-        <div className={`mt-10 ${ props.isMobile ? 'mb-24' : ''} sm:mt-16`}>
+        <motion.div 
+            className={`mt-10 ${ props.isMobile ? 'mb-24' : ''} sm:mt-16`}
+            initial = {{ opacity: 0 }}
+			animate = {{ opacity: 1 }}
+			exit    = {{ opacity: 0 }}>
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="lg:flex justify-between lg:justify-center">
                     <div className="w-12/12 lg:w-10/12 xl:w-8/12">
@@ -18,7 +23,7 @@ const Tools = ( props ) => {
                             </h1>
                         </div>
                         <h3 className="mt-8 text-gray-500 dark:text-white font-semibold text-xl">Most Common Tools</h3>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8 mb-12 px-6 sm:px-10 md:px-0">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mt-8 mb-12 px-6 sm:px-10 md:px-0">
                         {
                             ToolsList.map(
                                 (tools, index) => {
@@ -34,7 +39,7 @@ const Tools = ( props ) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
  

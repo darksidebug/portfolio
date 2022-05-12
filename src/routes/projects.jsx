@@ -1,10 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import ProjectsList from "../data/projects";
+import { motion } from "framer-motion"
 
 const Projects = ( props ) => {
     return (  
-        <div className={`mt-10 ${ props.isMobile ? 'mb-24' : ''} sm:mt-16`}>
+        <motion.div 
+            className={`mt-10 ${ props.isMobile ? 'mb-24' : ''} sm:mt-16`}
+            initial = {{ opacity: 0 }}
+			animate = {{ opacity: 1 }}
+			exit    = {{ opacity: 0 }}>
             <div className="container mx-auto px-4 lg:px-8">
                 <div className="lg:flex justify-between lg:justify-center">
                     <div className="w-12/12 lg:w-10/12 xl:w-8/12">
@@ -49,7 +54,7 @@ const Projects = ( props ) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
  

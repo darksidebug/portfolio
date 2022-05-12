@@ -1,6 +1,12 @@
+import { motion } from "framer-motion"
+
 const Education = ( props ) => {
     return (  
-        <div className={ props.isMobile ? 'pl-3' : ''}>
+        <motion.div 
+            className={ props.isMobile ? 'pl-3' : ''}
+            initial = {{ opacity: 0 }}
+			animate = {{ opacity: 1 }}
+			exit    = {{ opacity: 0 }}>
             <h1 className="block mt-10 ml-6 sm:ml-0 text-left text-[1.5rem] md:text-xl font-bold md:font-semibold text-blue4">Educational Background</h1>
             <div className="relative mt-6 px-10 pb-6 last:pb-0 after:content-[''] after:absolute after:top-2 after:left-[1.8rem] sm:after:left-[1.08rem] after:-z-1 
                         after:h-full after:w-0.5 after:bg-gray-200 dark:after:md:bg-gray-500">
@@ -50,7 +56,7 @@ const Education = ( props ) => {
                     <h3 className="pl-4 sm:pl-0 text-[0.9rem] sm:text-sm font-medium text-gray-400 tracking-[0.03rem]">June 1995 - May 2001</h3>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
  

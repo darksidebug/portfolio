@@ -1,8 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { motion } from "framer-motion"
+
 const Contact = ( props ) => {
     return (  
-        <>
-        <div className={`container mx-auto ${ !props.isMobile ? 'mt-8 md:mt-20' : 'mt-8'} mb-24 px-4 md:px-2 lg:px-8`}>
+        <motion.div 
+            className={`container mx-auto ${ !props.isMobile ? 'mt-8 md:mt-20' : 'mt-8'} mb-24 px-4 md:px-2 lg:px-8`}
+            initial = {{ opacity: 0 }}
+			animate = {{ opacity: 1 }}
+			exit    = {{ opacity: 0 }}>
             <div className="flex justify-center">
                 <div className="w-12/12">
                     <div className="block sm:flex justify-between">
@@ -69,8 +74,7 @@ const Contact = ( props ) => {
                     </div>
                 </div>
             </div>
-        </div>
-        </>
+        </motion.div>
     );
 }
  

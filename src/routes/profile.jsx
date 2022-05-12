@@ -6,8 +6,7 @@ import Button from "../components/button";
 import Education from "./education";
 import Experience from "./experience";
 import Expertise from "./expertise";
-import { NavLink } from "react-router-dom";
-
+import { motion } from "framer-motion";
 
 const Profile = ( props ) => {
 	const [isEducation, setEducation] = useState(true)
@@ -39,7 +38,11 @@ const Profile = ( props ) => {
 	}
 
 	return (  
-		<div className={`container mx-auto ${ !props.isMobile ? 'mt-18' : 'mt-0 mb-10'} px-4 md:px-2 lg:px-8`}>
+		<motion.div 
+			className={`container mx-auto ${ !props.isMobile ? 'mt-18' : 'mt-0 mb-10'} px-4 md:px-2 lg:px-8`}
+			initial = {{ opacity: 0 }}
+			animate = {{ opacity: 1 }}
+			exit    = {{ opacity: 0 }}>
 			<div className={`block md:flex md:justify-between ${ !props.isMobile ? 'mt-8' : 'mt-0'}`}>
 				<div className="py-4 w-12/12 md:w-4/12">
 					{
@@ -83,11 +86,11 @@ const Profile = ( props ) => {
 						</div>
 					</div>
 					<div className="flex justify-center items-center mt-12">
-						<NavLink to="#" download="" className="flex justify-start items-center py-3 px-12 space-x-2 rounded-md text-white font-semibold bg-blue4">
+						<a href="/Updated_CV_new.pdf" fileName="Updated_CV.pdf" download="Updated_CV.pdf" className="flex justify-start items-center py-3 px-12 space-x-2 rounded-md text-white font-semibold bg-blue4">
 							<span>Download CV</span>
 							<svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" 
 								strokeLinecap="round" strokeLinejoin="round"><path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/></svg>
-						</NavLink>
+						</a>
 					</div>
 				</div>
 				<div className="py-4 w-12/12 md:w-8/12">
@@ -115,7 +118,7 @@ const Profile = ( props ) => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
     );
 }
  

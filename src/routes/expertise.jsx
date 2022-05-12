@@ -1,8 +1,13 @@
 import ExpertiseList from "../data/expertise"
+import { motion } from "framer-motion"
 
 const Expertise = ( props ) => {
     return (  
-        <div className={ props.isMobile ? 'pl-3' : ''}>
+        <motion.div 
+            className={ props.isMobile ? 'pl-3' : ''}
+            initial = {{ opacity: 0 }}
+			animate = {{ opacity: 1 }}
+			exit    = {{ opacity: 0 }}>
             <h1 className="block mt-10 ml-6 sm:ml-0 text-[1.5rem] md:text-xl font-bold md:font-semibold text-blue4">{ props.isMobile ? 'Knowledge and Expertise' : 'Field of Expertise'}</h1>
             <div className={`md:overflow-y-auto mt-6 ${ props.isMobile ? 'mb-24' : 'mb-12'} md:h-[66vh] scrollbar`}>
                 {
@@ -40,7 +45,7 @@ const Expertise = ( props ) => {
                     })
                 }
             </div>
-        </div>
+        </motion.div>
     );
 }
  
