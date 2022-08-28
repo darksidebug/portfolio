@@ -28,6 +28,13 @@ const experience = [
         "description" : "Create and provide course mapping and syllabus. Provide the most relevant topics of the handled subject. Ensure that the students absorb the idea and knowledge from the topics being discuss. Provide assistance by catering and answering their concerns related to the subject or to the course. Check and grade student outputs, and perform other teacher related responsiblities."
     },
     {
+        "position"    : "Web Developer (Remote)",
+        "company"     : "SCP",
+        "address"     : "Metro Manila, Philippines",
+        "year"        : "September 2020- October 2020",
+        "description" : ""
+    },
+    {
         "position"    : "Full Stack Software Developer",
         "company"     : "Freelance",
         "address"     : "Southern Leyte",

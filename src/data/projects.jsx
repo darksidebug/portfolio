@@ -6,6 +6,8 @@ import MovieStream from "../img/MovieStream.jpg"
 import WaterSystem from "../img/MWS.png"
 import PayrollManagement from "../img/Payroll.png"
 import GISWebBasedAssetMgt from "../img/GISWebBasedAssetMgt.png"
+import POFChat from "../img/pofchat.jpg"
+import POFPersonal from "../img/paymeshare.jpg"
 
 const projectLists = [
     {
@@ -34,7 +36,7 @@ const projectLists = [
     },
     {
         "id"     : 3,
-        "name"   : "Movie stream",
+        "name"   : "Movie Stream",
         "details": null,
         "tech"   : [
             {
@@ -103,6 +105,30 @@ const projectLists = [
             }
         ],
         "img" : GISWebBasedAssetMgt
+    },
+    {
+        "id"     : 9,
+        "name"   : "POFChat",
+        "details": null,
+        "tech"   : [
+            {
+                "techStack": null,
+                "percent"  : null
+            }
+        ],
+        "img" : POFChat
+    },
+    {
+        "id"     : 10,
+        "name"   : "POF-PayMeShare",
+        "details": null,
+        "tech"   : [
+            {
+                "techStack": null,
+                "percent"  : null
+            }
+        ],
+        "img" : POFPersonal
     },
 ]
 
