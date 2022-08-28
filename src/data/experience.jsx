@@ -1,5 +1,19 @@
 const experience = [
     {
+        "position"    : "Senior Front-End Developer",
+        "company"     : "RagingRiver ICT",
+        "address"     : "Metro Manila, Philippines",
+        "year"        : "August 2022 - Present",
+        "description" : ""
+    },
+    {
+        "position"    : "Mid Front-End Development Engineer",
+        "company"     : "Innovations Group",
+        "address"     : "Pasay City, Philippines",
+        "year"        : "June 2022 - August 2022",
+        "description" : "Transform UI design mockups into a working user interface web design. Ensuring that the client's demands are followed and added. Handle and process backend data for user vizualization. Integrate API's or other third party's for frontend functionality. Maintained scalability of the user interface, making it responsive and user friendly, Ensuring bug free product for smooth data transactions. "
+    },
+    {
         "position"    : "Visiting IT Tech Support and Maintenance",
         "company"     : "Mary Ann Pharmacy",
         "address"     : "Sogod, Southern Leyte",

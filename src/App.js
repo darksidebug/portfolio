@@ -12,9 +12,9 @@ import Tools from "./routes/devtools";
 import About from "./routes/about";
 
 const App = () => {
-	const [isDarkModeToggled, setDarkMode] = useState(false);
+	const [isDarkModeToggled, setDarkMode] 		   = useState(false);
 	const [isNavMenuToggled, setNavMenuToggleMode] = useState(false);
-	const [isMobileDevice, setMobileDeviceMode] = useState(false);
+	const [isMobileDevice, setMobileDeviceMode]    = useState(false);
 
 	useEffect(() => {	
 		handleDeviceDetection();
