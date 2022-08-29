@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 const Education = ( props ) => {
     return (  
         <motion.div 
-            className={ props.isMobile ? 'pl-3' : ''}
+            className={ props.isMobile ? 'pl-3 mb-12' : 'mb-12'}
             initial = {{ opacity: 0 }}
 			animate = {{ opacity: 1 }}
 			exit    = {{ opacity: 0 }}>

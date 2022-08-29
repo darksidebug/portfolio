@@ -1,8 +1,8 @@
 const experience = [
     {
-        "position"    : "Senior Front-End Developer",
-        "company"     : "RagingRiver ICT",
-        "address"     : "Metro Manila, Philippines",
+        "position"    : "Senior Front-End Developer (Remote)",
+        "company"     : "RagingRiver ICT Corporation",
+        "address"     : "Mandaluyong City, Philippines",
         "year"        : "August 2022 - Present",
         "description" : ""
     },
@@ -29,8 +29,8 @@ const experience = [
     },
     {
         "position"    : "Web Developer (Remote)",
-        "company"     : "SCP",
-        "address"     : "Metro Manila, Philippines",
+        "company"     : "i4One Inc.",
+        "address"     : "Pasig City, Philippines",
         "year"        : "September 2020- October 2020",
         "description" : ""
     },
