@@ -30,7 +30,7 @@ const experience = [
     {
         "position"    : "Web Developer (Remote)",
         "company"     : "i4One Inc.",
-        "address"     : "Pasig City, Philippines",
+        "address"     : "Taguig City, Philippines",
         "year"        : "September 2020- October 2020",
         "description" : ""
     },
